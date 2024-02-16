@@ -40,7 +40,7 @@ function HomePage() {
       {/*CARDS*/}
       <div className='flex justify-center items-center flex-col my-20'>
         <h1 className='text-4xl md:text-7xl text-white'>How We Can Help</h1>
-
+    
         <div className='text-white flex flex-col md:flex-row items-center justify-center my-16 gap-10'>
           <Card className="py-4 w-2/3 md:w-1/3 shadow-sm shadow-cyan-500/30 transition hover:-translate-y-4 ">
             <CardBody className="overflow-visible py-2">
@@ -74,18 +74,23 @@ function HomePage() {
         </div>
       </div>
       {/*Collabs */}
-      <div className='flex flex-col text-white text-center justify-center my-20 overflow-hidden mx-4 md:mx-0'>
-        <h1 className=' font-extrabold text-4xl'>OUR COLLABORATIONS</h1>
+      <div className='flex flex-col text-white text-center justify-center my-20 overflow-hidden mx-8 md:mx-0'>
+        <h1 className=' font-extrabold text-4xl'>OUR CLIENTS</h1>
+        <hr className=' w-2/12 self-center my-4 border-b border-blue-400' />
         <div className='grid grid-cols-2 mx-4 md:mx-0  md:flex gap-10'>
           <Image src={logo1} alt='...' width={200} className=''/>
           <Image src={logo2} alt='...' width={200} className=''/>
-          <Image src={logo3} alt='...' width={200} className=''/>
+          <Image src={logo8} alt='...' width={200} className=''/>
           <Image src={logo4} alt='...' width={200} className=''/>
           <Image src={logo5} alt='...' width={200} className=''/>
-          <Image src={logo6} alt='...' width={200} className=''/>
+          <Image src={logo6} alt='...' width={200} className='md:hidden'/>
+          <Image src={logo7} alt='...' width={200} className='md:hidden'/>
+          <Image src={logo8} alt='...' width={200} className='md:hidden'/>
+        </div>
+        <div className='  md:justify-between md:text-center hidden md:flex w-2/3 self-center'>
+        <Image src={logo6} alt='...' width={200} className=''/>
           <Image src={logo7} alt='...' width={200} className=''/>
-          <Image src={logo8} alt='...' width={200} className=''/>
-
+          <Image src={logo3} alt='...' width={200} className=''/>
         </div>
 
       </div>
@@ -93,7 +98,7 @@ function HomePage() {
 
       {/*CAROUSEL*/}
       <div className='flex flex-col my-12 text-white text-center justify-center mx-4 md:mx-0'>
-        <h1 className=' text-4xl font-bold'>OUR HAPPY CUSTOMERS</h1>
+        <h1 className=' text-4xl '>OUR HAPPY CUSTOMERS</h1>
         <div className='flex flex-col md:flex-row text-white gap-12 my-20' data-carousel="slide">
           <Testimonial
             image={review1}
