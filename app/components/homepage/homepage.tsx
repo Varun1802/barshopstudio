@@ -12,6 +12,8 @@ import logo3 from "@/public/images/3.png"
 import logo4 from "@/public/images/4.png"
 import logo5 from "@/public/images/5.png"
 import logo6 from "@/public/images/6.png"
+import logo7 from "@/public/images/7.png"
+import logo8 from "@/public/images/8.png"
 import Link from 'next/link'
 function HomePage() {
   return (
@@ -36,10 +38,10 @@ function HomePage() {
         </div>
       </div>
       {/*CARDS*/}
-      <div className='flex justify-center items-center flex-col my-12'>
+      <div className='flex justify-center items-center flex-col my-20'>
         <h1 className='text-4xl md:text-7xl text-white'>How We Can Help</h1>
 
-        <div className='text-white flex flex-col md:flex-row items-center justify-center my-12 gap-10'>
+        <div className='text-white flex flex-col md:flex-row items-center justify-center my-16 gap-10'>
           <Card className="py-4 w-2/3 md:w-1/3 shadow-sm shadow-cyan-500/30 transition hover:-translate-y-4 ">
             <CardBody className="overflow-visible py-2">
               <BadgeDollarSign size={45} className='hover:text-green-600' />
@@ -72,15 +74,17 @@ function HomePage() {
         </div>
       </div>
       {/*Collabs */}
-      <div className='flex flex-col text-white text-center justify-center my-16 overflow-hidden mx-4 md:mx-0'>
+      <div className='flex flex-col text-white text-center justify-center my-20 overflow-hidden mx-4 md:mx-0'>
         <h1 className=' font-extrabold text-4xl'>OUR COLLABORATIONS</h1>
         <div className='grid grid-cols-2 mx-4 md:mx-0  md:flex gap-10'>
-          <Image src={logo1} alt='...' width={200} />
-          <Image src={logo2} alt='...' width={200} />
-          <Image src={logo3} alt='...' width={200} />
-          <Image src={logo4} alt='...' width={200} />
-          <Image src={logo5} alt='...' width={200} />
-          <Image src={logo6} alt='...' width={200} />
+          <Image src={logo1} alt='...' width={200} className=''/>
+          <Image src={logo2} alt='...' width={200} className=''/>
+          <Image src={logo3} alt='...' width={200} className=''/>
+          <Image src={logo4} alt='...' width={200} className=''/>
+          <Image src={logo5} alt='...' width={200} className=''/>
+          <Image src={logo6} alt='...' width={200} className=''/>
+          <Image src={logo7} alt='...' width={200} className=''/>
+          <Image src={logo8} alt='...' width={200} className=''/>
 
         </div>
 

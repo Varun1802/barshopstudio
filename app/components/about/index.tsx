@@ -1,34 +1,76 @@
+import Image from 'next/image'
 import React from 'react'
-
+import about from '@/public/images/about.jpg'
+import { Briefcase ,UsersRound,Speech,Handshake} from 'lucide-react';
 function About() {
   return (
     <>
-      <div className="sm:flex items-center max-w-screen-xl">
-        <div className="sm:w-1/2 p-4">
-          <div className="image object-center text-center">
-            <img src="https://i.imgur.com/WbQnbas.png"/>
-          </div>
+  <section className="py-10 lg:py-20  font-poppins  text-gray-300">
+        <div className="max-w-6xl py-4 mx-auto lg:py-6 md:px-6">
+            <div className="flex flex-wrap ">
+                <div className="w-full px-4 mb-10 lg:w-1/2 lg:mb-0 ">
+                    <div className="lg:max-w-md">
+                        <div className="px-4 pl-4 mb-6 border-l-4 border-blue-500">
+                            <span className="text-sm  uppercase ">Who we are?</span>
+                            <h1 className="mt-2 text-3xl font-black  text-gray-100 md:text-5xl ">
+                                About Us
+                            </h1>
+                        </div>
+                        <p className="px-4 mb-10 text-base leading-7  ">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam Lorem ipsum dolor sit
+                            amet.
+                        </p>
+                        <div className="flex flex-wrap items-center">
+                            <div className="w-full px-4 mb-6 sm:w-1/2 md:w-1/2 lg:mb-6">
+                                <div className="p-6  ">
+                                    <span className="text-blue-500 ">
+                                      <Briefcase size={40}/>
+                                    </span>
+                                    <p className="mt-4 mb-2 text-3xl font-bold  text-gray-100  ">200+
+                                    </p>
+                                    <h2 className="text-sm  text-gray-400  ">Projects and Plans</h2>
+                                </div>
+                            </div>
+                            <div className="w-full px-4 mb-6 sm:w-1/2 md:w-1/2 lg:mb-6">
+                                <div className="p-6  ">
+                                    <span className="text-blue-500 ">
+                                    <Handshake size={40}/>
+                                    </span>
+                                    <p className="mt-4 mb-2 text-3xl font-bold  text-gray-100  ">3,000+
+                                    </p>
+                                    <h2 className="text-sm  text-gray-400 ">Helped people</h2>
+                                </div>
+                            </div>
+                            <div className="w-full px-4 mb-6 sm:w-1/2 md:w-1/2 lg:mb-6">
+                                <div className="p-6  ">
+                                    <span className="text-blue-500 ">
+                                      <Speech size={40}/>
+                                    </span>
+                                    <p className="mt-4 mb-2 text-3xl font-bold  text-gray-100  ">120+
+                                    </p>
+                                    <h2 className="text-sm  text-gray-400  ">Volunteer</h2>
+                                </div>
+                            </div>
+                            <div className="w-full px-4 mb-6 sm:w-1/2 md:w-1/2 lg:mb-6">
+                                <div className="p-6  ">
+                                    <span className="text-blue-500 ">
+                                    <UsersRound size={40}/>
+                                    </span>
+                                    <p className="mt-4 mb-2 text-3xl font-bold  text-gray-100  ">35,000
+                                    </p>
+                                    <h2 className="text-sm  text-gray-400 ">Audience Reached</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="w-full px-4 mb-10 lg:w-1/2 lg:mb-0">
+                    <Image alt='' src={about} height={700}/>
+                </div>
+            </div>
         </div>
-        <div className="sm:w-1/2 p-5">
-          <div className="text">
-            <span className="text-white border-b-2 border-indigo-600 uppercase">About us</span>
-            <h2 className="my-4 font-bold text-3xl  sm:text-4xl text-white ">About <span className="text-indigo-600">Our Company</span>
-            </h2>
-            <p className="text-gray-100">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, commodi
-              doloremque, fugiat illum magni minus nisi nulla numquam obcaecati placeat quia, repellat tempore
-              voluptatum.
-            </p>
-          </div>
-
-          <button className="relative inline-flex h-12 overflow-hidden rounded-full p-[2px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 md:w-64 mx-10 md:mx-0 mt-4">
-            <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
-            <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
-              Request a Quote
-            </span>
-          </button>
-        </div>
-      </div>
+    </section>
     </>
   )
 }

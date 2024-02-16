@@ -3,9 +3,9 @@ import React from 'react'
 function Contact() {
     return (
         <>
-            <section className="body-font relative text-gray-400">
+            <section className="body-font relative text-gray-400 ">
 
-                <div className="container mx-auto px-5 py-2">
+                <div className="container mx-auto px-5 py-2 h-screen">
 
                     <div className="mb-12 flex w-full flex-col text-center">
                         <h1 className="title-font mb-4 text-2xl font-medium text-white sm:text-3xl md:text-6xl">Contact Us</h1>
