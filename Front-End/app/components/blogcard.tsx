@@ -1,15 +1,15 @@
+import Image from 'next/image'
 import React from 'react'
 
-function Blogcard(){
+function Blogcard(props :any){
     return (
         <>
             <li className="relative flex flex-col sm:flex-row xl:flex-col items-start">
                 <div className="order-1 sm:ml-6 xl:ml-0">
                     <h3 className="mb-1 text-gray-400 font-semibold dark:text-slate-200">
-                        <span className="mb-1 block text-sm leading-6 text-indigo-500">Headless UI</span>Completely unstyled, fully
-                        accessible UI components</h3>
+                        <span className="mb-1 block text-sm leading-6 text-indigo-500">{props.date}</span>{props.name}</h3>
                     <div className="prose prose-slate prose-sm text-slate-600 dark:prose-dark">
-                        <p></p>
+                        <p>{props.desc.slice(0,200)}</p>
                     </div><a
                         className="group inline-flex items-center h-9 rounded-full text-sm font-semibold whitespace-nowrap px-3 focus:outline-none focus:ring-2 bg-slate-100 text-slate-700 hover:bg-slate-200 hover:text-slate-900 focus:ring-slate-500 dark:bg-slate-700 dark:text-slate-100 dark:hover:bg-slate-600 dark:hover:text-white dark:focus:ring-slate-500 mt-6"
                         href="">Learn

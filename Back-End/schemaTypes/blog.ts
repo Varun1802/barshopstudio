@@ -5,16 +5,17 @@ export default {
     title: 'Blog',
     fields: [
       {
-        name: 'name',
+        title: 'Title',
+        name: 'title',
         type: 'string',
-        title: 'Title'
+        description: 'Make it catchy',
       },
       {
         title: 'Slug',
         name: 'slug',
         type: 'slug',
         options: {
-          source: 'name',
+          source: 'title',
           maxLength: 200, // will be ignored if slugify is set
           slugify: (input: string) => input
                                .toLowerCase()
@@ -39,13 +40,6 @@ export default {
         options: {
           hotspot: true // <-- Defaults to false
         },
-        fields: [
-          {
-            name: 'caption',
-            type: 'string',
-            title: 'Caption',
-          }
-        ]
       }
     ]
   }

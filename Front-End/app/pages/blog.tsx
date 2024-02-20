@@ -8,7 +8,7 @@ const client = createClient({
   projectId: "old3apdr",
   dataset: "production",
   apiVersion: "2022-03-25",
-  useCdn: false
+  useCdn: true
 });
 const builder=imageUrlBuilder(client)
 export function urlFor(source:any){
@@ -16,10 +16,10 @@ export function urlFor(source:any){
 }
 async function getData() {
   const query = `*[_type=="blog"]{
-    name,
+    title,
     description,
-      poster,
-      releaseDate
+      releaseDate,
+      poster{asset{_ref}}
   }`;
   const data = await client.fetch(query);
   return data;
@@ -37,12 +37,14 @@ async function Blog() {
            <hr className='border-b border-gray-800 w-11/12 self-center'/>
               <div>
                   <ul className="grid grid-cols-1 xl:grid-cols-3 gap-y-10 gap-x-6 items-start ">
+                    
                       {data.map((item: any,idx: number)=>(
-                        <div key={idx}>
-                            <h1>{item.name}</h1>
-                            <p>{item.description}</p>
-                            
-                        </div>
+                       <Blogcard 
+                       key={idx}
+                       name={item.title}
+                       desc={item.description} 
+                       date={item.releaseDate}
+                       />
                       ) 
                       )}
                   </ul>
