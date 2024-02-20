@@ -1,5 +1,5 @@
 import React from 'react'
-import Error404 from '../components/404'
+import Error404 from '../pages/404'
 
 function page() {
   return (
