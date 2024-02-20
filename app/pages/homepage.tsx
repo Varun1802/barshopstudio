@@ -102,14 +102,14 @@ function HomePage() {
         <div className='flex flex-col md:flex-row text-white gap-12 my-20' data-carousel="slide">
           <Testimonial
             image={review1}
-            name="Brad Barrett"
-            position=" Co-host of ChooseFI - Top 50 Business Podcast"
-            exp="We were blown away by Jonathan and his team. They exceeded expectations every step of the way: courteous, professional, always reachable and really good at their craft" />
+            name="Gina Gutierrez"
+            position=" Co-founder & CEO of Dipsea"
+            exp="The professionalism with which Jonathan and his team handle their business is out of this world. Their client service is honestly best-in-class. I felt very taken care of." />
           <Testimonial
             image={review2}
             name="Brad Barrett"
             position=" Co-host of ChooseFI - Top 50 Business Podcast"
-            exp="We were blown away by Jonathan and his team. They exceeded expectations every step of the way: courteous, professional, always reachable and really good at their craft" />
+            exp="We were blown away by Jonathan and his team. They exceeded expectations every step of the way: courteous, professional, always reachable and really good at their craft." />
 
         </div>
       </div>
