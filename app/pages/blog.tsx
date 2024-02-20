@@ -12,14 +12,14 @@ const client = createClient({
 });
 const builder=imageUrlBuilder(client)
 export function urlFor(source:any){
-    return builder.image(source)
+    return builder.image(source);
 }
 async function getData() {
   const query = `*[_type=="blog"]{
     title,
     description,
       releaseDate,
-      poster{asset{_ref}}
+      poster
   }`;
   const data = await client.fetch(query);
   return data;
@@ -44,6 +44,7 @@ async function Blog() {
                        name={item.title}
                        desc={item.description} 
                        date={item.releaseDate}
+                       img={urlFor(item.poster).url()}
                        />
                       ) 
                       )}

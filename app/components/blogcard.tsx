@@ -20,7 +20,7 @@ function Blogcard(props :any){
                             strokeLinecap="round" strokeLinejoin="round">
                             <path d="M0 0L3 3L0 6"></path>
                         </svg></a>
-                </div><img src="https://tailwindcss.com/_next/static/media/headlessui@75.c1d50bc1.jpg" alt="" className="mb-6 shadow-md rounded-lg bg-slate-50 w-full sm:w-[17rem] sm:mb-0 xl:mb-6 xl:w-full" width="1216" height="640" />
+                </div><Image src={props.img} alt="" className="mb-6 shadow-md rounded-lg bg-slate-50 w-full sm:w-[17rem] sm:mb-0 xl:mb-6 xl:w-full" width="1216" height="640" />
             </li>
         </>
     )
