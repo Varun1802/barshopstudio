@@ -31,7 +31,7 @@ async function Blog() {
             <div className='flex flex-col text-white p-8 gap-6 justify-center'>
               <div className=''>
                   <h1 className='text-5xl font-bold'>Latest</h1>
-                  <p>A blog created with Next.js and Tailwind.css</p>
+                  <p>Publish your passions, your way!</p>
               </div>
               
            <hr className='border-b border-gray-800 w-11/12 self-center'/>
