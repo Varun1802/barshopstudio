@@ -1,5 +1,5 @@
 import React from 'react'
-import Blogcard from './blogcard'
+import Blogcard from '../components/blogcard'
 import { createClient } from "next-sanity";
 
 function Blog() {

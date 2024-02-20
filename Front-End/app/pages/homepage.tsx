@@ -5,7 +5,7 @@ import mic from "@/public/images/image-removebg-preview.png"
 import { BadgeDollarSign, Lightbulb, FolderKanban } from 'lucide-react';
 import review1 from "@/public/images/review1.jpg"
 import review2 from "@/public/images/review2.png"
-import Testimonial from './Testimonial'
+import Testimonial from '../components/Testimonial'
 import logo1 from "@/public/images/1.png"
 import logo2 from "@/public/images/2.png"
 import logo3 from "@/public/images/3.png"
