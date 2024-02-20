@@ -12,6 +12,9 @@ function BurgerMenu() {
           <Link href="/about" className=" hover:text-cyan-500">About</Link>
         </li>
         <li className='w-full border-b text-right px-4'>
+          <Link href='/blog' className="  hover:text-cyan-500">Blogs</Link>
+        </li>
+        <li className='w-full border-b text-right px-4'>
           <Link href='/contact' className="  hover:text-cyan-500">Contact</Link>
         </li>
       </ul>
