@@ -8,7 +8,7 @@ const client = createClient({
   projectId: "old3apdr",
   dataset: "production",
   apiVersion: "2022-03-25",
-  useCdn: true
+  useCdn: false
 });
 const builder=imageUrlBuilder(client)
 export function urlFor(source:any){
