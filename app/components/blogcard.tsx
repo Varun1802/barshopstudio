@@ -5,6 +5,7 @@ import React from 'react'
 function Blogcard(props :any){
     return (
         <>
+        <Link href={`/blog/${props.currentSlug.current}`}>
             <li className="relative flex flex-col sm:flex-row xl:flex-col items-start">
                 <div className="order-1 sm:ml-6 xl:ml-0">
                     <h3 className="mb-1 text-gray-400 font-semibold dark:text-slate-200 line-clamp-2">
@@ -23,6 +24,7 @@ function Blogcard(props :any){
                         </svg></Link>
                 </div><Image src={props.img} alt="" className="mb-6 shadow-md rounded-lg bg-slate-50 w-full sm:w-[17rem] sm:mb-0 xl:mb-6 xl:w-full" width="1080" height="720" />
             </li>
+            </Link>
         </>
     )
 }
