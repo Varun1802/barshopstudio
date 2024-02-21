@@ -29,9 +29,19 @@ export default {
         type: 'date'
       },
       {
-        title: 'Description',
-        name: 'description',
+        title: 'Small Description',
+        name: 'smallDescription',
         type: 'text'
+      },
+      {
+        name:'content',
+        type:'array',
+        title:'Content',
+        of:[
+          {
+            type:'block',
+          },
+        ]
       },
       {
         title: 'Poster',

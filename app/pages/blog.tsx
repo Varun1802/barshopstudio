@@ -17,9 +17,10 @@ export function urlFor(source:any){
 async function getData() {
   const query = `*[_type=="blog"]{
     title,
-    description,
+    smallDescription,
       releaseDate,
-      poster
+      poster,
+      slug{current}
   }`;
   const data = await client.fetch(query);
   return data;
@@ -42,9 +43,10 @@ async function Blog() {
                        <Blogcard 
                        key={idx}
                        name={item.title}
-                       desc={item.description} 
+                       desc={item.smallDescription} 
                        date={item.releaseDate}
                        img={urlFor(item.poster).url()}
+                       currentSlug={item.slug}
                        />
                       ) 
                       )}
