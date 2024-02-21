@@ -31,7 +31,7 @@ async function Blog() {
     <>
             <div className='flex flex-col text-white p-8 gap-6 justify-center'>
               <div className=''>
-                  <h1 className='text-5xl font-bold'>Blogs</h1>
+                  <h1 className='text-5xl font-bold'>Latest</h1>
                   <p>Publish your passions, your way!</p>
               </div>
               
