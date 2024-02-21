@@ -29,7 +29,7 @@ function Footer() {
                             </li>
                         </ul>
                     </div>
-                    <hr className="my-6 border-gray-700 sm:mx-auto dark:border-white lg:my-8" />
+                    <hr className="my-6 border-gray-800 sm:mx-auto dark:border-white lg:my-8" />
                     <span className="block text-sm text-white sm:text-center ">© 2024 <Link href="/" className="hover:underline">Barshop Studios™</Link>. All Rights Reserved.</span>
                 </div>
             </footer>
