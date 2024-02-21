@@ -35,16 +35,16 @@ async function BlogArticle({params}:{params:{slug:string}}) {
         <span className='block text-base text-center text-[#4C50BC] font-semibold tracking-wide uppercase'>Barshop Studios - Blog</span>
         <section className='mt-8 flex flex-col items-center'>
            
-                <span className='mt-2 block text-4xl  leading-8 tracking-tight font-bold text-white'>{data.title}</span>
+                <span className='mt-2 block text-4xl text-center leading-8 tracking-tight font-bold text-white'>{data.title}</span>
                 <span className='text-[#4C50BC] text-sm mt-4'>{data.releaseDate}</span>
                 <Image src={urlFor(data.poster).url()} 
                 alt='' 
                 width={800} 
                 height={800}
-                className=' rounded-lg mt-8 border-cyan-500/50 sm:px-10 '
+                className='px-12 md:px-0 rounded-lg mt-8 border-cyan-500/50 '
                 priority/>
 
-                <div className='text-white w-8/12 mt-16 prose prose-lg'>
+                <div className='text-white w-8/12 mt-16 prose text-lg'>
                 <p>{data.smallDescription}</p>
                 <PortableText value={data.content}/>
                 </div>
