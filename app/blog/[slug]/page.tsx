@@ -1,3 +1,4 @@
+
 import React from 'react'
 import { createClient } from "next-sanity";
 import imageUrlBuilder from "@sanity/image-url"
@@ -11,7 +12,7 @@ const client = createClient({
     useCdn: false
   });
   const builder=imageUrlBuilder(client)
-  export function urlFor(source:any){
+  function urlFor(source:any){
       return builder.image(source);
   }
   async function getData(slug:string) {
@@ -27,6 +28,7 @@ const client = createClient({
     const data = await client.fetch(query);
     return data;
   } 
+  
 async function BlogArticle({params}:{params:{slug:string}}) {
     const data=await getData(params.slug);
    
